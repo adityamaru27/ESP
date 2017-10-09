@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="91" id="KGk-i7-Jjw" customClass="ActionsTableViewCell" customModule="Eat_Sleep_Poop_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="90.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNi-Qh-4Y4" customClass="AppDefaultButton" customModule="Eat_Sleep_Poop_App" customModuleProvider="target">
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="73" id="IBS-qE-6GZ"/>
+                            <constraint firstAttribute="width" constant="73" id="dLR-xf-dnz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="19"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="buttonTwoTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8PT-CK-XqQ"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGG-ka-MKa" customClass="AppDefaultButton" customModule="Eat_Sleep_Poop_App" customModuleProvider="target">
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="73" id="6ZR-Kh-FPg"/>
+                            <constraint firstAttribute="height" constant="73" id="Mj9-7e-hJ2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="19"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="buttonOneTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UyG-3a-h8d"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WmR-za-286" customClass="AppDefaultButton" customModule="Eat_Sleep_Poop_App" customModuleProvider="target">
+                        <frame key="frameInset" minX="234" minY="9" width="73" height="73"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="73" id="HDs-xC-LNa"/>
+                            <constraint firstAttribute="height" constant="73" id="St8-Dd-LL0"/>
+                            <constraint firstAttribute="height" constant="73" id="ki1-Pl-iCW"/>
+                            <constraint firstAttribute="width" constant="73" id="quH-tt-rFK"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="19"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HDs-xC-LNa"/>
+                                <exclude reference="St8-Dd-LL0"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <action selector="buttonThirdTappped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="34k-2C-v7O"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pNi-Qh-4Y4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="AZc-ja-Kdt"/>
+                    <constraint firstItem="WmR-za-286" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ETB-VP-Ve6"/>
+                    <constraint firstItem="WmR-za-286" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="95" id="UrT-ca-Jlm"/>
+                    <constraint firstItem="cGG-ka-MKa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="VTQ-QR-7Ca"/>
+                    <constraint firstItem="WmR-za-286" firstAttribute="leading" secondItem="pNi-Qh-4Y4" secondAttribute="trailing" constant="32" id="jZr-cl-YB0"/>
+                    <constraint firstItem="pNi-Qh-4Y4" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="5" id="sQd-CL-dO4"/>
+                    <constraint firstItem="cGG-ka-MKa" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tal-Wy-CdW"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="jZr-cl-YB0"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="FirstButtonLeadingSpace" destination="VTQ-QR-7Ca" id="Si5-Ql-QaH"/>
+                <outlet property="SecondButtonXposition" destination="sQd-CL-dO4" id="Y7z-sY-OqS"/>
+                <outlet property="ThirdButtonXposition" destination="UrT-ca-Jlm" id="bQA-kz-tDV"/>
+                <outlet property="firstButton" destination="cGG-ka-MKa" id="uFT-9S-g8A"/>
+                <outlet property="secondButton" destination="pNi-Qh-4Y4" id="G58-ub-Lnp"/>
+                <outlet property="thirdButton" destination="WmR-za-286" id="v2i-v1-X39"/>
+            </connections>
+            <point key="canvasLocation" x="307" y="382.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Text-Regular.otf">
+            <string>SFUIText-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="137" id="KGk-i7-Jjw" customClass="SleepTableViewCell" customModule="Eat_Sleep_Poop_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="136"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="oz" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fEI-Zq-hnZ" userLabel="Value">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Zab-xU-5rW"/>
+                            <constraint firstAttribute="width" constant="30" id="yWS-hn-48A"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Type Here" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ph-rF-Ag3">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="hVR-DL-Wtw"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
+                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEF-GC-mbi" userLabel="Description">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="Faf-TB-i0b"/>
+                            <constraint firstAttribute="height" constant="30" id="XS1-vq-EcL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qNS-aF-hs1">
+                        <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="WVA-r3-aoR"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJq-b1-Bd6">
+                        <color key="backgroundColor" red="0.82352941176470584" green="0.83921568627450982" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="114" id="l9x-pX-RMb"/>
+                            <constraint firstAttribute="height" constant="48" id="uvd-0n-mJD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
+                        <state key="normal" title="Fell Asleep">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="actionAsleep:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="e6h-31-vYh"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2D-LR-gO2">
+                        <color key="backgroundColor" red="0.82352941176470584" green="0.83921568627450982" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="Gu9-EN-srU"/>
+                            <constraint firstAttribute="width" constant="114" id="Kts-x0-SgX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SFUIText-Regular" family="SF UI Text" pointSize="17"/>
+                        <state key="normal" title="Woke Up">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="actionWokeUp:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="9Xb-jl-dwG"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="yEF-GC-mbi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="6IZ-YQ-chQ"/>
+                    <constraint firstItem="fEI-Zq-hnZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="78n-yP-ryJ"/>
+                    <constraint firstItem="qNS-aF-hs1" firstAttribute="top" secondItem="yEF-GC-mbi" secondAttribute="bottom" constant="8.5" id="91G-0L-Pjx"/>
+                    <constraint firstItem="qNS-aF-hs1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="11" id="CHO-sU-bi5"/>
+                    <constraint firstAttribute="trailing" secondItem="qNS-aF-hs1" secondAttribute="trailing" constant="12" id="E2s-Qd-41E"/>
+                    <constraint firstAttribute="trailing" secondItem="j2D-LR-gO2" secondAttribute="trailing" constant="9" id="Eow-at-5GN"/>
+                    <constraint firstItem="eJq-b1-Bd6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="3" id="F1W-sd-OGx"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="eJq-b1-Bd6" secondAttribute="bottom" constant="4" id="Hi9-QC-Cww"/>
+                    <constraint firstAttribute="bottom" secondItem="j2D-LR-gO2" secondAttribute="bottom" constant="12" id="MzM-KF-5Ki"/>
+                    <constraint firstAttribute="trailing" secondItem="fEI-Zq-hnZ" secondAttribute="trailing" constant="12" id="PHM-zZ-1Yp"/>
+                    <constraint firstItem="j2D-LR-gO2" firstAttribute="top" secondItem="qNS-aF-hs1" secondAttribute="bottom" constant="18" id="WgD-Ac-xcU"/>
+                    <constraint firstItem="3ph-rF-Ag3" firstAttribute="leading" secondItem="yEF-GC-mbi" secondAttribute="trailing" constant="8" id="ZKC-Mc-jE7"/>
+                    <constraint firstItem="yEF-GC-mbi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="f5d-UW-9Qa"/>
+                    <constraint firstItem="fEI-Zq-hnZ" firstAttribute="leading" secondItem="3ph-rF-Ag3" secondAttribute="trailing" constant="8" id="k4M-g9-jF2"/>
+                    <constraint firstItem="3ph-rF-Ag3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="19" id="n5e-Jr-QL6"/>
+                    <constraint firstItem="eJq-b1-Bd6" firstAttribute="top" secondItem="qNS-aF-hs1" secondAttribute="bottom" constant="18" id="nie-wa-ovo"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="AsleepWidthConstraint" destination="l9x-pX-RMb" id="RaI-Bi-Opk"/>
+                <outlet property="WokeUpWidthConstraint" destination="Kts-x0-SgX" id="xXL-uY-pKo"/>
+                <outlet property="buttonFellAsleep" destination="eJq-b1-Bd6" id="X28-al-TYu"/>
+                <outlet property="buttonWokeup" destination="j2D-LR-gO2" id="7Nc-5c-51Z"/>
+                <outlet property="descriptionLabel" destination="yEF-GC-mbi" id="bhR-E6-986"/>
+                <outlet property="descriptionWidth" destination="XS1-vq-EcL" id="MYw-mZ-WFb"/>
+                <outlet property="txtQty" destination="3ph-rF-Ag3" id="4j7-0d-gha"/>
+                <outlet property="valueLabel" destination="fEI-Zq-hnZ" id="OO8-u9-YFx"/>
+            </connections>
+            <point key="canvasLocation" x="86" y="105.5"/>
+        </tableViewCell>
+    </objects>
+</document>
