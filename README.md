@@ -1,1 +1,1 @@
-# Proto-UNDO
+Legacy version of EatSleepPoop application.
